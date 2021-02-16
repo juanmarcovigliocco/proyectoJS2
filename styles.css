@@ -8,8 +8,9 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 img {
-    height: 350px;
-    width: 350px;
+    height: 200px;
+    max-height: auto;
+    max-width: 100%;
     margin-bottom: 10px;
 }
 .header {
@@ -46,7 +47,7 @@ h1 {
 }
 
 #contenedor-productos {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
@@ -72,6 +73,7 @@ p {
     font-weight: 700;
     padding: 5px;
     border: none;
+    
 }
 .boton-agregar:hover {
     cursor: pointer;
@@ -187,3 +189,65 @@ p {
     line-height: 4; }
 
 
+    form {
+        margin-top: 100px;
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inputIngreso {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .boton {
+        background-color: rgb(80, 231, 80);
+        color: white;
+        padding: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+    .listaClientes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .clientes {
+        margin: 5px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        transition: all .5s;
+    }
+    .clientes p {
+        background: white;
+        padding: 10px;
+        font-size: 20px;
+        min-width: 400px;
+    }
+    .clientes .boton-eliminar{
+        background-color: rgb(196, 48, 48);
+    }
+    
+    .clientes-completada {
+        opacity: 0.5;
+    }
+    .clientes-completada p {
+        text-decoration: line-through;
+    }
+
+
+    .navegacion a {
+        color: #ffffff;
+        margin-right: 0rem;
+        margin-left: 0.2rem;
+        text-align: left;
+      }
+      
+      a:hover{
+          color: rgb(255, 153, 0);
+        }
+      
