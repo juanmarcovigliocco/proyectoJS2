@@ -9,63 +9,150 @@
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cotizador.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+
+
 </head>
 <body>
   <header>
     <div>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Brand -->
-            <a id=logo class="navbar-brand" href="#">BUHO SRL</a>
+            <a id=logo class="navbar-brand" href="#">COTIZADOR</a>
           
             <!-- Links -->
             <ul class="navbar-nav ">    
               <!-- Dropdown -->
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  Cotizador
-                </a>
-                <li class="nav-item dropdown "></li>
-                <a class="nav-link" href="Agenda.html">Agenda Productor</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="index.html">Auto</a>
-                    <a class="dropdown-item" href="moto.html">Moto</a>
-                    <a class="dropdown-item" href="AP.html">Accidentes Personales</a>
-                </div>
-              </li>
+
+                <a class="nav-link" href="index.html">Volver a Pagina Principal</a>
+
+ 
             </ul>
           </nav>
     </div>
 </header>
-<div class="header">
-        <h1>Cotice su Accidentes Personales</h1>
-        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+<div class="container">
+  <div class="row">
+    <div class="col col-md-8 mr-md-auto ml-md-auto" >
+      <div id="contenido">
+            <header>
+               <h1 class="text-center">Cotiza tu seguro de Accidentes Personales</h1>
+            </header>
+            <div class="row contenido-formulario">
+                <div class="col col-md-10 mr-md-auto ml-md-auto">
+                  <form action="#" id="cotizar-seguro">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Nombre:</label>
+                      <textarea class="form-control" id="nombre" rows="1"></textarea>
+                      <label for="exampleFormControlTextarea1">Apellidos:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea> 
+                      <label for="exampleFormControlTextarea1">Fecha de nacimiento:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                      <label for="exampleFormControlTextarea1">Fecha de inicio de vigencia:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                      <label for="exampleFormControlTextarea1">E-mail:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                      <label for="exampleFormControlSelect1">Vigencia de Cobertura</label>
+                      <select class="form-control" id="vigenciaCobertura">
+                        <option value="1">24hs</option>
+                        <option value="2">Mensual</option>
+                        <option value="3">Anual</option>
+                      </select>
+                      <br>                 
+                      <select class="form-contr" id="-DOCUMENTO-">
+                        <option value="">-DOCUMENTO-</option>
+                        <option value="1">CUIL</option>
+                        <option value="2">CUIT</option>
+                        <option value="3">DNI</option>
+                    </select>
+
+                      <label for="exampleFormControlTextarea1">Numero</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>  
+                   </div>
+                                <div class="form-group">
+                                        <label for="anio">Actividad</label>
+                                        <select class="form-control" id="actividad">
+                                            <option value="0">Elija actividad</option>
+                                            <option value="1">Plomero</option>
+                                            <option value="2">Gasista</option>
+                                            <option value="3">Electricista</option>
+                                            <option value="4">Niñera</option>
+                                            <option value="5">Jardinero</option>
+                                            <option value="6">Costurera</option>
+                                            <option value="7">Mozo/a</option>
+                                            <option value="8">Cajero/a</option>
+                                        </select>
+                                </div>
+                                <h4 class="centrar">IN ITINERE:</h4>
+                                <p>Significa en el camino. Para cubrir al trabajador desde su hogar hasta el lugar donde lleve a cabo el trabajo. ¿Desea Agregarlo a su cotización?</p>
+                                <div class="container">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    SI
+                                  </label>
+                                </div>
+                                      <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                      <label class="form-check-label" for="defaultCheck1">
+                                      NO
+                                    </label>
+                                </div>
+                                <fieldset class="form-group" id="tipoSeguro">
+                                    <div class="row">
+                                         <legend class="col-form-legend col-12 centrar">Tipo Seguro</legend>
+                                      
+                                        <div class="col12">
+                                          <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input" type="radio" name="tipo" value="Básico" checked>
+                                              Básico
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="radio" name="tipo" value="Mediano">
+                                              Mediano
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input" type="radio" name="tipo" value="Premium">
+                                              Premium
+                                            </label>
+                                        </div>
+                                      </div>
+                                      </div>
+                                    
+                              </fieldset>
+
+                          <div id="cargando">
+                              <img src="spinner.gif">
+                          </div>
+                          <div id="resultado"></div>
+                          <div class="form-group">
+                                  <button type="submit" class="btn btn-raised btn-primary">Cotizar
+                                  </button>
+                          </div>
+                  </form> 
+                </div>
+          </div>
+      </div> <!--#contenido-->
+    </div>
+  </div>
 </div>
-<h2 class="centrarletra">Agregue sus Coberturas para ver precio</h2>
-<select class=centrar id="selecCobertura">
-  <option value="all">Coberturas</option>
-  <option value="A">A</option>
-  <option value="B">B</option>
-  <option value="C">C</option>
-  <option value="D">D</option>
-  <option value="E">E</option>
-  <option value="Todo Riesgo">Todo Riesgo</option>
-</select>
 
 
 
+<footer>
 
-<footer class="fondofooter">
-		  Copyright &copy; Buho S.R.L  2020
 </footer>
-<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script defer src="stock.js"></script>
-<script defer src="modal.js"></script>
-<script defer src="app.js"></script>
+
+<script defer src="cotizador.js"></script>
+
 
 </body>
 </html>
